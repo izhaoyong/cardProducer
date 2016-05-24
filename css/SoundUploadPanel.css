@@ -1,0 +1,120 @@
+div#SoundUploadPanel{
+	width: 770px;
+	height: 748px;
+	background-color: #efeae4;
+	position: absolute;
+	right: 0px;
+	visibility: hidden;
+}
+
+div#SoundUploadPanel>div:nth-child(1){
+	position: absolute;
+	width: 100%;
+	height: 48px;
+	background-color: #d4ccc2;
+}
+
+div#SoundUploadPanel>div:nth-child(1)>label{
+	position: absolute;
+	line-height: 48px;
+	height: 48px;
+	left: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+button.soundUploadXButton{
+	position: absolute;
+	top: 8px;
+	right: 15px;
+	width: 32px;
+	height: 32px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	border-radius: 16px;
+	border: 1px solid black;	
+}
+
+button.soundUploadXButton:hover{
+	background-color: red;
+}
+
+div.waveContainer{
+	position: absolute;
+	left: 20px;
+	right: 20px;
+	top: 80px;
+	height: 80px;
+	visibility: hidden;
+}
+
+div.recordControl{
+	position: absolute;
+	top: 60px;
+	left: 325px;
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	font-size: 20px;
+	background-image: url(../assets/mainIcon/start_record.png);
+}
+
+label.recordingLabel{
+	position: absolute;
+	left: 480px;
+	top: 160px;
+	color: #585858;
+	font-size: 18px;
+}
+
+div#SoundUploadPanel>div:nth-child(5){
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 200px;
+	bottom: 100px;
+	overflow-y: auto;
+}
+
+div#SoundUploadPanel>div:nth-child(6){
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	bottom: 0px;
+	background-color: #D4CCC2;
+}
+
+label.tipLabel{
+	position: absolute;
+	visibility: hidden;
+	height: 100px;
+	line-height: 100px;
+	right: 240px;
+	color: #0A78C8;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+button.uploadSoundButton{
+	position: absolute;
+	top: 27.5px;
+	right: 50px;
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+	color: #fff;
+	background-color: #0A78C8;
+	border: 1px solid black;
+}
+
+button.uploadSoundButton:hover{
+	background-color: #0067b7;
+}
+
+audio.recordSoundAudio{
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	z-index: 100;
+}

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>HTML5 Card</title>
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link rel="stylesheet" type="text/css" href="css/sound.css">
+	<link rel="stylesheet" type="text/css" href="css/picture.css">
+	<link rel="stylesheet" type="text/css" href="css/card.css">
+	<link rel="stylesheet" type="text/css" href="css/video.css">
+	<link rel="stylesheet" type="text/css" href="css/chooseArea.css">
+	<link rel="stylesheet" type="text/css" href="css/workArea.css">	
+	<link rel="stylesheet" type="text/css" href="css/UploadPanel.css">
+	<link rel="stylesheet" type="text/css" href="css/UploadItem.css">
+	<link rel="stylesheet" type="text/css" href="css/UploadItem2.css">
+	<link rel="stylesheet" type="text/css" href="css/UploadItemNoCut.css">
+	<link rel="stylesheet" type="text/css" href="css/MediaFileUploadPanel.css">
+	<link rel="stylesheet" type="text/css" href="css/MediaFileUploadItem.css">
+	<link rel="stylesheet" type="text/css" href="css/SoundUploadPanel.css">
+	<link rel="stylesheet" type="text/css" href="css/SoundUploadItem.css">
+
+	<link rel="stylesheet" type="text/css" id="picItemCSS" href="">
+	<link rel="stylesheet" type="text/css" id="audioItemCSS" href="">
+	<link rel="stylesheet" type="text/css" id="cardItemCSS" href="">
+	<link rel="stylesheet" type="text/css" id="videoItemCSS" href="">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="html2canvas.js"></script>
+</head>
+<body>
+	<div style="margin: auto; background-color: red; height: 818px; width: 1024px;">
+		<div style="height: 70px; background-color: #ffffff;" class="header">
+    		<h1>HTML5 Card</h1>
+		</div>
+
+	  	<div id="wrapper">
+	      	<div id="resourceContainer">
+	      		<div>
+	      			<div id="searchBar">
+	      				<div>
+		      				<input id="searchInput" type="text"/>
+		      				<label id="removeInputX">x</label>
+	      				</div>
+	      				<button title="搜索资源" onclick="searchResource();"></button>
+	      			</div>
+
+	      			<div id="resourceIconContainer">
+	      				<button id="pictureNavButton" title="图片资源"></button>
+	      				<button id="soundNavButton" title="声音资源"></button>
+	      				<button id="cardNavButton" title="卡片资源"></button>
+	      				<button id="videoNavButton" title="视频资源"></button>
+	      			</div>
+	      		</div>
+
+	      		<div id="resourceVS">
+	      			<div id="pictureContent">
+	      				<div id="pictureOriginalContent" class="Content">
+	      					<div class="lineContainer">
+	      						<label>我的图库</label>
+	      						<button class="imgUploadButton">上传图片</button>
+	   							<input class="uploadImg" type="file" accept="image/*" multiple="multiple"></input>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div class="myContainer">
+		      					<div id="myPictureContainer" class="TileGroup">
+		      						<img src="Pic/16896_small.jpg"/>
+		      					</div>
+		      					<label id="noMyPicLabel" class="noMyLabel">您的图库为空，赶快上传吧</label>
+	      					</div>
+
+	      					<button id="myPicMoreButton">更多</button>
+
+	      					<div class="lineContainer">
+	      						<label>系统图库</label>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+	
+		      				<div id="systemPictureContainer" class="TileGroup">
+		      				</div>
+
+		      				<button id="sysPicMoreButton">更多</button>
+	      				</div>
+
+	      				<div id="pictureSearchContent" class="Content">
+	      					<div class="searchLine">
+	      						<label>搜索结果</label>
+	      						<label>共找到张图片</label>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div id="picSearchResultContainer" class="TileGroup">
+	      					</div>
+
+	      					<button id="getMoreSearchedPicButton">更多</button>
+	      				</div>
+	      			</div>
+
+	      			<div id="soundContent">
+	      				<div id="soundOriginalContent" class="Content">
+	      					<div class="lineContainer">
+	      						<label>我的声音</label>
+	      						<button class="uploadAudioButton">上传</button>
+	      						<input class="uploadAudio" type="file" accept="audio/*" multiple="multiple"></input>
+	      						<button id="soundRecordButton">录制</button>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div>
+	      						<div id="mySoundContainer" class="TileGroup"></div>
+	      						<label id="noMySoundLabel" class="noMyLabel">您的声音库为空，赶快录音/上传吧</label>
+	      					</div>
+
+	      			 		<button id="mySoundMoreButton">更多</button>
+
+	      					<div class="lineContainer">
+	      						<label>系统声音</label>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div id="systemSoundContainer" class="TileGroup"></div>
+
+	      					<button id="sysSoundMoreButton">更多</button>
+	      				</div>
+
+	      				<div id="soundSearchContent" class="Content">
+	      					<div class="searchLine">
+	      						<label>搜索结果</label>
+	      						<label>共找到段声音</label>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div id="soundSearchResultContainer" class="TileGroup"></div>
+
+	      					<button id="getMoreSearchedSoundButton">更多</button>
+	      				</div>
+	      			</div>
+
+	      			<div id="cardContent">
+	      				<div id="cardOriginalContent" class="Content">
+	      					<div class="lineContainer">
+	      						<label>我的卡片</label>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div>
+	      						<div id="myCardContainer" class="TileGroup"></div>
+
+	      						<label id="noMyCardLabel" class="noMyLabel">您的卡片库为空，赶快制作吧</label>
+	      					</div>
+
+	      					<button id="myCardMoreButton">更多</button>
+
+	      					<div class="lineContainer">
+	      						<label>系统卡片</label>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div id="systemCardContainer" class="TileGroup"></div>
+
+	      					<button id="sysCardMoreButton">更多</button>
+	      				</div>
+
+	      				<div id="cardSearchContent" class="Content">
+	      					<div class="searchLine">
+	      						<label>搜索结果</label>
+	      						<label>共找到张卡片</label>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div id="cardSearchResultContainer" class="TileGroup"></div>
+
+	      					<button id="getMoreSearchedCardButton">更多</button>
+
+	      				</div>
+	      			</div>
+
+	      			<div id="videoContent">
+	      				<div id="videoOriginalContent" class="Content">
+	      					<div class="lineContainer">
+	      						<label>我的视频</label>
+	      						<button class="uploadVideoButton">上传视频</button>
+	      						<input class="uploadVideo" type="file" accept="video/*" multiple="multiple"></input>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div class="myContainer">
+	      						<div id="myVideoContainer" class="TileGroup"></div>
+
+	      						<label id="noMyVideoLabel" class="noMyLabel">您的视频为空，赶快上传吧</label>
+	      					</div>
+
+	      					<button id="myVideoMoreButton">更多</button>
+
+	      					<div class="lineContainer">
+	      						<label>系统视频</label>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div id="systemVideoContainer" class="TileGroup"></div>
+
+	      					<button id="sysVideoMoreButton">更多</button>
+	      				</div>
+
+	      				<div id="videoSearchContent" class="Content">
+	      					<div class="searchLine">
+	      						<label></label>
+	      						<label></label>
+	      						<div class="line1"></div>
+	      						<div class="line2"></div>
+	      					</div>
+
+	      					<div id="videoSearchResultContainer" class="TileGroup"></div>
+
+	      					<button id="getMoreSearchedCardButton">更多</button>
+	      				</div>
+
+	      			</div>
+	      		</div>
+	      	</div>
+
+	      	<div id="workArea">
+	      		<div id="mainButtons">
+	      			<button id="plusButton" title="返回选择模板"></button>
+	      			<button id="reloadButton" title="刷新模板"></button>
+	      			<button id="saveButton" title="保存卡片"></button>
+	      			<button id="helpButton" title="帮助"></button>
+	      		</div>
+	      		<div id="templateContainer"></div>
+	      		<div id="saveTip"></div>
+	      		<label id="savingLabel">正在保存卡片...</label>
+	      	</div>
+
+	      	<div id="mask"></div>
+
+			<div id="chooseArea">
+				<label id="tipChooseLabel" class="tip">请选择卡片模板</label>
+				<p style="position: absolute; top: 20px; height: 30px; text-align: center; width: 100%; margin: 0px;">
+					<label id="loadingLabel" class="hidden">正在加载卡片模板</label>
+				</p>
+				<div>
+					<div id="templateGroup">
+						<div class="cardItem">
+							<label class="description" value="CiCard">词卡1</label>
+							<img src="assets/cardType/ciCard.jpg" class="img" />
+						</div>
+						
+						<div class="cardItem">
+							<label class="description" value="CiCard2">词卡2</label>
+							<img src="assets/cardType/ciCard2.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="CiCard3">词卡3</label>
+							<img src="assets/cardType/ciCard3.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="DialogCard">情景对话卡</label>
+							<img src="assets/cardType/dialogCard.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="ImageCardCommon">照片卡</label>
+							<img src="assets/cardType/imageCard.jpg" class="img" />
+						</div>
+						
+						<div class="cardItem">
+							<label class="description" value="BqCard">图文卡</label>
+							<img src="assets/cardType/dwCard.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="VideoCard">视频卡</label>
+							<img src="assets/cardType/videoCard.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="Exercise1">练习卡1</label>
+							<img src="assets/cardType/exercise1.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="Exercise2">练习卡2</label>
+							<img src="assets/cardType/exercise2.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="ChooseCard">选词填空</label>
+							<img src="assets/cardType/right_wrong.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="LineCard">连线卡</label>
+							<img src="assets/cardType/link.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="YORNCard">判断对错卡</label>
+							<img src="assets/cardType/fillin.jpg" class="img" />
+						</div>
+						
+						<div class="cardItem">
+							<label class="description" value="StartCard">微信首页卡</label>
+							<img src="assets/cardType/firstpage.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="EndCard">微信尾页卡</label>
+							<img src="assets/cardType/lastpage.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="Exercise3">练习卡3</label>
+							<img src="assets/cardType/exercise3.jpg" class="img" />
+						</div>
+
+						<div class="cardItem">
+							<label class="description" value="PaixuCard">排序</label>
+							<img src="assets/cardType/exercise3.jpg" class="img" />
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="namecheck">
+				<form onsubmit="return false;" action="/fabucards" method="POST">
+					<label id="infoLabel">添加卡片信息</label>
+					<label id="unsaveTipLabel">(您的卡片还未保存)</label>
+
+					<div>
+						<label>卡片名</label>
+						<input type="text" id="cardsnametext"></input>
+						<label >*</label>
+						<label >卡片标签</label>
+						<input type="text" id="tagstext"></input>
+					</div>
+
+					<div>
+						<label>卡片类型</label>
+						<hr/><hr/>
+						<div class="tileGroup1">
+							<div>
+								<input type="radio" value="1" checked name="Category">拼音</input>
+							</div>
+
+							<div>
+								<input type="radio" value="2" name="Category">字</input>		
+							</div>
+
+							<div>
+								<input type="radio" value="3" name="Category">词</input>
+							</div>
+
+							<div>
+								<input type="radio" value="4" name="Category">句</input>
+							</div>
+
+							<div>
+								<input type="radio" value="5" name="Category">情景对话</input>
+							</div>
+
+							<div>
+								<input type="radio" value="6" name="Category">语言文化</input>
+							</div>
+
+							<div>
+								<input type="radio" value="8" name="Category">练习考试</input>
+							</div>
+
+							<div>
+								<input type="radio" value="7" name="Category">写作</input>
+							</div>
+
+						</div>
+
+						<label>*</label>
+						<label>二级类别</label>
+						<input type="text" name="Category1" id="Category1"></input>
+						<label>附加信息</label>
+						<input type="text" name="EX" id="EX"></input>
+					</div>
+
+					<div>
+						<button id="OK">保存</button>
+						<button id="Cancel">取消</button>
+					</div>
+					<input type="hidden" id="cardsid" value="5323"></input>		
+				</form>
+			</div>
+
+			<div id="imageUploadPanel">
+				<div>
+					<label>上传一张或多张图片</label>
+					<button class="xButton">X</button>
+				</div>
+
+				<label class="usertipLabel">拖动图像调整裁剪区域并添加标签 (添加标签可以让您搜索到这张图片)</label>
+
+				<div class="Scroller">
+					<div class="previewContainer"></div>
+				</div>
+
+				<div>
+					<button id="uploadButton">上传</button>
+					<label>正在上传图片...</label>
+				</div>				
+			</div>
+
+			<div id="SoundUploadPanel">
+				<div>
+					<label>录制一段或多段声音</label>
+					<button class="soundUploadXButton">X</button>
+				</div>
+
+				<div class="waveContainer"></div>
+
+				<div class="recordControl"></div>
+
+				<label class="recordingLabel"></label>
+
+				<div></div>
+
+				<div>
+					<label class="tipLabel">正在上传声音...</label>
+					<button class="uploadSoundButton">上传</button>
+				</div>
+
+				<audio class="recordSoundAudio" controls></audio>
+			</div>
+
+			<div id="mediaUploadPanel">
+				<div>
+					<label>上传一个或多个声音文件</label>
+					<label>上传一个或多个视频文件</label>
+					<button class="mediaXButton">X</button>
+				</div>
+
+				<label class="usertipLabel">给声音文件加上标签 (您可以根据标签中的关键词搜索到这个声音文件)</label>
+				<label class="usertipLabel">给视频文件加上标签 (您可以根据标签中的关键词搜索到这个视频文件)</label>
+
+				<hr/>
+				<div class="previewMediaContainer"></div>
+				<div class="mediaTools">
+					<label class="tipLabel">正在上传声音文件...</label>
+					<label class="tipLabel">正在上传视频文件...</label>
+					<button class="mediaUploadButton">上传</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<template id="UploadItem" style="display: none;">
+		<div class="uploadItem">
+			<div class="scroller">
+				<!-- <img class="previewImage" src=""> -->
+			</div>
+
+			<div>
+				<textarea class="tagInput">添加标签：</textarea>
+			</div>
+
+			<label class="responseLabel">上传成功</label>
+		</div>		
+	</template>
+
+	<template id="UploadItem2" style="display: none;">
+		<div class="uploadItem2">
+			<div class="scroller">
+			</div>
+
+			<div>
+				<textarea class="tagInput">添加标签：</textarea>
+			</div>
+
+			<label class="responseLabel"></label>
+		</div>
+	</template>
+
+	<template id="UploadItemNoCut" style="display: none;">
+		<div class="uploadItemNoCut">
+			<div class="scroller">
+			</div>
+
+			<div>
+				<textarea class="tagInput">添加标签：</textarea>
+			</div>
+
+			<label class="responseLabel"></label>
+		</div>
+	</template>
+
+	<template id="mediaFileUploadItem" style="display: none;">
+		<div class="MediaFileUploadItem">
+			<img class="typeIcon" src="assets/buttons/video.png">
+			<label></label>
+			<label></label>
+
+			<input class="tagInput" type="text" value="添加标签："></input>
+			<label>等待上传</label>
+			<form action="" method="post" enctype="multipart/form-data">
+				
+			</form>
+			<hr/>
+		</div>
+	</template>	
+
+	<template id="soundUploadItem" style="display: none;">
+		<div class="SoundUploadItem">
+			<div>
+				<textarea class="soundNameInput">声音名：</textarea>
+			</div>
+			<div class="playButton">hello</div>
+			<div>
+				<textarea class="soundTagInput">添加标签：</textarea>
+			</div>
+			<button class="soundDeleteButton">X</button>
+			<label></label>
+			<button></button>
+		</div>		
+	</template>
+
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="js/chooseArea.js"></script>
+	<script type="text/javascript" src="js/workArea.js"></script>
+	<script type="text/javascript" src="js/UploadPanel.js"></script>
+	<script type="text/javascript" src="js/UploadItem.js"></script>
+	<script type="text/javascript" src="js/MediaFileUploadPanel.js"></script>
+	<script type="text/javascript" src="js/SoundUploadPanel.js"></script>	
+
+	<script type="text/javascript" id="jsPTR"></script>
+	<script type="text/javascript" id="audioJS"></script>
+	<script type="text/javascript" id="videoJS"></script>
+	<script type="text/javascript" id="picJS"></script>
+	<script type="text/javascript" id="cardJS"></script>
+</body>
+</html>

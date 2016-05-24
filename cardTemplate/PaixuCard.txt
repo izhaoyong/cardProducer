@@ -1,0 +1,7 @@
+<div id="paixuWrapper">
+	<textarea class="input" data-autoresize rows="1"></textarea>
+	<button class="generate">Generate</button>
+	<div class="sequence"></div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/PaixuCard.css">
+<script type="text/javascript" src="html2canvas.js">

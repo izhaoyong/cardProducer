@@ -1,0 +1,19 @@
+﻿<div id="YORNwrapper">
+	<label >判断对错卡</label>
+	<button id="add">添加</button>
+	<div id="scroller">
+		<div id="itemWrapper">
+			<div class="item">
+				<input class="questionInput"  type="text" value="今天/晚上/的/足球比赛/很/精彩/。"/>
+				<input class="modifyInput"  type="text"/>
+				<p class="up">
+					<input class="trueRB"  name="check" type="radio" checked="checked"/>对</p>
+				<p class="down">
+					<input class="falseRB" name="check" type="radio" />错</p>
+				<button>X</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/YORNCard.css">

@@ -1,0 +1,12 @@
+﻿<div id="Choosewrapper">
+	<label id="">选词填空</label>
+	<button>添加词组</button>
+	<div id="wordGroupContainer">
+		<div class="wordGroup">
+			<input type="text" class="textInput"/>
+			<button >x</button>
+		</div>
+	</div>
+	<textarea id="chooseText"></textarea>
+</div>
+<link rel="stylesheet" type="text/css" href="css/ChooseCard.css">

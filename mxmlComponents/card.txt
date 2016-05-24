@@ -1,0 +1,23 @@
+<div class="cornerWrapper">
+    <img class="deleteImg" title="delete" draggable="false" src="assets/icon/delete.png" style="left: 0px;"/>
+    <img class="colorImg" title="color" draggable="false" src="assets/icon/color.png" style="left: 20px;"/>
+    <br/>
+    <div>
+        <button class="corner" name="top left" style="top: -5px; left: -5px;"></button>
+
+        <button class="corner" name="top" style="top: -5px; left: calc(50% - 5px);"></button>
+
+        <button class="corner" name="top right" style="top: -5px; right: -5px;"></button>
+
+        <button class="corner" name="left" style="top: calc(50% - 5px); left: -5px;"></button>
+
+        <button class="corner" name="right" style="top: calc(50% - 5px); right: -5px; "></button>
+
+        <button class="corner" name="bottom left" style="bottom: -5px; left: -5px; "></button>
+
+        <button class="corner" name="bottom" style="bottom: -5px; left: calc(50% - 5px);"></button>
+
+        <button class="corner" name="bottom right" style="bottom: -5px; right: -5px;"></button>
+    </div>
+    <p></p>
+</div>

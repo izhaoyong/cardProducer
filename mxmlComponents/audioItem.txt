@@ -1,0 +1,6 @@
+<div class="audio">
+	<label draggable="true"></label>
+	<audio></audio>
+	<button class="playButton" draggable="true"></button>			
+	<progress value="0"></progress>
+</div>

@@ -1,0 +1,100 @@
+#Choosewrapper{
+	position: absolute;
+	width: 1000px;
+	height: 908px;
+	border-radius: 40px;
+	background-color: white;
+	overflow: hidden;
+	transform: scale(0.7) translate(-214px,-194px);
+	box-shadow: 2px 2px 2px gray;
+}
+
+#Choosewrapper>label{
+	position: absolute;
+	top: 1px;
+	background-color: #06C267;
+	color: #fff;
+	line-height: 60px;
+	height: 60px;
+	font-size: 36px;
+	text-align: center;
+	left: 45%;
+	padding: 0px 30px;
+}
+
+#Choosewrapper>button{
+	position: absolute;
+	right: 100px;
+	top: 1px;
+	width: 200px;
+	height: 60px;
+	color: #1475EC;
+	font-size: 32px;
+}
+
+#chooseText{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 200px;
+	bottom: 0px;
+	border-color: #DBDBDB;
+	font-size: 36px;
+	line-height: 54px;
+	padding: 20px;
+	width: 958px;
+	resize: none;
+	border-top:2px solid #DBDBDB;
+	outline: none;
+}
+
+#wordGroupContainer{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 80px;
+	height: 120px;
+	padding-right: 10px;
+	line-height: 120px;
+	display: flex;
+	justify-content: center;
+	overflow-x: auto;
+	align-items: center;
+}
+
+.wordGroup{
+	position: relative;
+	width: 200px;
+	height: 80px;
+	line-height: 80px;
+	overflow: visible;
+}
+
+.wordGroup>input{
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	height: 60px;
+	padding: 0px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 3px;
+	width: 177px;
+	border-color: #D7D7D7;
+	border-style: solid;
+	font-size: 32px;
+}
+
+.wordGroup>button{
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	font-size: 20px;
+	color: #fff;
+	outline: none;
+	border-style: solid;
+	background-color: red;
+}

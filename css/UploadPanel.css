@@ -1,0 +1,105 @@
+#imageUploadPanel{
+	position: absolute;
+	width: 770px;
+	height: 748px;
+	right: 0px;
+	background-color: #EFEAE4;
+	border: none;
+	visibility: hidden;
+}
+
+#imageUploadPanel>div:nth-child(1){
+	position: relative;
+	width: 100%;
+	height: 48px;
+	background-color: #D4CCC2;
+	vertical-align: middle;
+	border: none;
+}
+
+#imageUploadPanel>div:nth-child(1)>label{
+	position: absolute;
+	height: 48px;
+	line-height: 48px;
+	left: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+button.xButton{
+	position: absolute;
+	top: 8px;
+	right: 15px;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 18px;
+	border: 1px solid black;
+}
+
+button.xButton:hover{
+	background-color: red;
+}
+
+label.usertipLabel{
+	left: 20px;
+	top: 65px;
+	width: 700px;
+	color: #909090;
+	font-size: 16px;
+}
+
+div.Scroller{
+	position: absolute;
+	left: 20px;
+	right: 0px;
+	top: 100px;
+	bottom: 110px;
+	overflow: auto;
+}
+
+div.previewContainer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	width: 730px;
+}
+
+#imageUploadPanel>div:nth-child(4){
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	bottom: 0px;
+	background-color: #D4CCC2;
+	border:none;
+}
+
+#imageUploadPanel>div:nth-child(4)>button{
+	position: absolute;
+	background-color: #0A78f8;
+	top: 27.5px;
+	right: 50px;
+	width: 150px;
+	height: 45px;
+	font-size: 18px;
+	color: #fff;
+	border: 1px solid black;
+}
+
+#imageUploadPanel>div:nth-child(4)>button:hover{
+	background-color: #0A78C8;
+}
+
+#imageUploadPanel>div:nth-child(4)>label{
+	position: absolute;
+	right: 240px;
+	color: #0A78C8;
+	font-size: 20px;
+	font-weight: bold;
+	height: 100px;
+	line-height: 100px;	
+	visibility: hidden;
+}

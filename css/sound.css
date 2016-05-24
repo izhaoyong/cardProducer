@@ -1,0 +1,27 @@
+#soundContent{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+#soundOriginalContent{
+	/*display: none;*/
+}
+
+#soundOriginalContent>div:first-child>button:nth-child(2){
+	position: absolute;
+	right: 86px;
+	top: 10px;
+	color: #fff;
+}
+
+#soundRecordButton{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+#soundSearchContent{
+	display: none;	
+}

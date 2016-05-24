@@ -1,0 +1,11 @@
+<div class="commentWrapper">
+    <img class="deleteImg" src="assets/icon/delete.png" title="删除" draggable="false" style="left: 0px" />
+    <img class="colorImg" src="assets/icon/color.png" title="改变颜色" draggable="false" style="left: 20px"/>
+    <img class="toolImg" src="assets/icon/tool.png" title="设置显示内容" draggable="false" style="left: 40px"/>
+    <br/>
+    <div>
+        <div class="pyWrapper"    contenteditable="true"></div>
+        <div class="cnWrapper"    contenteditable="true"></div>
+        <div class="transWrapper" contenteditable="true"></div>
+    </div>
+</div>

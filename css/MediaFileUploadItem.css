@@ -1,0 +1,61 @@
+div.MediaFileUploadItem{
+	position: relative;
+	width: 770px;
+	height: 100px;
+}
+
+img.typeIcon{
+	position: absolute;
+	left: 40px;
+	width: 32px;
+	top: 14px;
+	height: 32px;
+}
+
+div.MediaFileUploadItem>label:nth-child(2){
+	position: absolute;
+	left: 90px;
+	right: 158px;
+	top: 10px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	padding-left: 3px;
+}
+
+div.MediaFileUploadItem>label:nth-child(3){
+	position: absolute;
+	right: 40px;
+	top: 10px;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+}
+
+input.tagInput{
+	position: absolute;
+	left: 90px;
+	bottom: 10px;
+	width: 522px;
+	height: 32px;
+	color: #868686;
+	font-size: 16px;
+}
+
+div.MediaFileUploadItem>label:nth-child(5){
+	position: absolute;
+	right: 40px;
+	bottom: 10px;
+	width: 100px;
+	height: 32px;
+	font-size: 16px;
+}
+
+hr{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	margin: 0px;
+	background-color: #d4ccc2;
+}

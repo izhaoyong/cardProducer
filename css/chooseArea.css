@@ -1,0 +1,105 @@
+#chooseArea{
+	width: 770px;
+	height: 748px;
+	background: #EBE6E1;
+	position: absolute;
+}
+
+#tipChooseLabel{
+	position: absolute;
+	left: 45px;
+	top: 20px;
+	font-size: 32px;
+}
+
+#loadingLabel{
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	background: #BDB5AA;
+	color: #fff;
+	font-weight: bold;
+ }
+
+#chooseArea>div:nth-child(3){
+	position: absolute;
+	top: 60px;
+	bottom: 0px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-y: scroll;
+}
+
+#templateGroup{
+	top: 0px;
+	bottom: 0px;
+	width: 680px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	align-content: space-between;
+}
+
+#templateGroup>div:nth-child(1){
+	margin-top: 0px;
+}
+
+#templateGroup>div:nth-child(2){
+	margin-top: 0px;
+}
+
+#templateGroup>div:nth-child(3){
+	margin-top: 0px;
+}
+
+.cardItem{
+	margin-top: 10px;
+	width: 220px;
+	height: 216px;
+	background: #BDB5AA;
+	font-size: 0px;
+	text-align: center;
+	position: relative;
+}
+
+.cardItem:hover{
+	-moz-box-shadow:0px 0px 4px #333333;
+	-webkit-box-shadow:0px 0px 4px #333333; 
+	box-shadow:0px 0px 4px #333333;
+}
+
+.cardItem>label{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	background: #BDB5AA;
+	font-size: 18px;
+}
+
+
+.cardItem>label.hover{
+	background: #0A78C8;
+}
+
+.cardItem>img{
+	position: absolute;
+	top: 40px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 176px;
+	width: 220px;
+}
+
+.cardItem>img.hover{
+	-moz-box-shadow:0px 0px 4px #333333;
+	-webkit-box-shadow:0px 0px 4px #333333; 
+	box-shadow:0px 0px 4px #333333;
+}

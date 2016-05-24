@@ -1,0 +1,101 @@
+div#mediaUploadPanel{
+	position: absolute;
+	width: 770px;
+	height: 748px;
+	right: 0px;
+	background-color: #EFEAE4;
+	visibility: hidden;
+}
+
+div#mediaUploadPanel>div:nth-child(1){
+	position: absolute;
+	width: 100%;
+	height: 48px;
+	background-color: #D4CCC2;
+}
+
+div#mediaUploadPanel>div:nth-child(1)>label{
+	position: absolute;
+	line-height: 48px;
+	height: 48px;
+	left: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+div#mediaUploadPanel>div:nth-child(1)>button{
+	position: absolute;
+	top: 8px;
+	right: 15px;
+	width: 32px;
+	height: 32px;
+	background-color: #D4CCC2;
+	border: 1px solid black;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 16px;
+	outline: none;
+}
+
+div#mediaUploadPanel>div:nth-child(1)>button:hover{
+	background-color: red;
+}
+
+label.usertipLabel{
+	position: absolute;
+	left: 20px;
+	top: 65px;
+	width: 700px;
+	color: #909090;
+	font-size: 16px;
+}
+
+div#mediaUploadPanel>hr{
+	position: absolute;
+	width: 100%;
+	top: 100px;
+}
+
+div.previewMediaContainer{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 100px;
+	bottom: 110px;
+	/*background-color: #fff;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+div.mediaTools{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	bottom: 0px;
+	background-color: #D4CCC2;
+}
+
+label.tipLabel{
+	position: absolute;
+	right: 240px;
+	color: #0A78C8;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 100px;
+	height: 100px;
+	visibility: hidden;
+}
+
+button.mediaUploadButton{
+	position: absolute;
+	top: 27.5px;
+	right: 50px;
+	width: 150px;
+	height: 45px;
+	color: #fff;
+	font-size: 18px;
+	background-color: #0A78C8;
+	border: 1px solid black;
+}

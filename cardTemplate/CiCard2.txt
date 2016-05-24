@@ -1,0 +1,16 @@
+<div id="picwrapper">
+	<div id="picWrapper">
+		<img id="backgroundImage" src="default_picture.jpg" />
+	</div>
+
+	<div style="position: absolute; top: 730px; width: 100%; bottom: 0px;">
+		<div class="explainRT">
+			<textarea id="explainRT">to send package</textarea>
+		</div>
+
+		<button id="playButton">
+			<audio src="assets/audio/default_audio.mp3"></audio>
+		</button>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/CiCard2.css">

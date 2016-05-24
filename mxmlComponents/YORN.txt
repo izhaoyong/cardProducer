@@ -1,0 +1,9 @@
+<div class="item">
+	<input class="questionInput"  type="text"/>
+	<input class="modifyInput"  type="text"/>
+	<p class="up">
+		<input class="trueRB" type="radio" checked="checked"/>对</p>
+	<p class="down">
+		<input class="falseRB" type="radio" />错</p>
+	<button>X</button>
+</div>

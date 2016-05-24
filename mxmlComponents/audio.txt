@@ -1,0 +1,6 @@
+<div class="audioWrapper" style="position:absolute;">
+    <img src="assets/icon/delete.png"  draggable="false" class="deleteImg"/>
+    <br/>
+    <img src="assets/icon/speaker48.png" draggable="false" class="audioImg" />
+    <audio style="display:none"></audio>
+</div>

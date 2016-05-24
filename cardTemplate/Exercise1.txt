@@ -1,0 +1,49 @@
+﻿<div id="Ex1wrapper">
+	<div id="picWrapper">
+		<img id="backgroundImage" src="assets/picture/default_picture.jpg" draggable="false"/>
+	</div>
+
+	<div>
+		<div class="selGroup">
+			<input id="aRadioButton" type="radio" name="check" value="male" checked="true"/>A.
+
+			<label class="selectLabel" id="aLabel">正确答案</label>
+
+			<input id="aInput" type="text"/>
+
+			<div class="line"></div>
+		</div>
+
+		<div class="selGroup">
+			<input id="bRadioButton" type="radio" name="check" value="male"/>B.
+
+			<label id="bLabel" style="visibility: hidden;">正确答案</label>
+
+			<input id="bInput" type="text"/>
+
+			<div class="line"></div>
+		</div>
+
+		<div class="selGroup">
+			<input id="cRadioButton" type="radio" name="check" value="male"/>C.
+
+			<label id="cLabel" style="visibility: hidden;">正确答案</label>
+
+			<input id="cInput" type="text"/>
+
+			<div class="line"></div>
+		</div>
+
+		<div class="selGroup">
+			<input id="dRadioButton" type="radio" name="check" value="male"/>D.
+
+			<label id="dLabel" style="visibility: hidden;">正确答案</label>
+
+			<input type="text" id="dInput"/>
+
+			<div class="line"></div>
+		</div>
+
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/Exercise1Card.css">

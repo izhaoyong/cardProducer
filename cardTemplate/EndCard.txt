@@ -1,0 +1,175 @@
+    <div id="Endwrapper">
+        <label class="text" id="text1">答对</label>
+        <label class="text" id="text2">9</label>
+        <label class="text" id="text3">题</label>
+
+        <label class="text" id="text4">答错</label>
+        <label class="text" id="text5">1</label>
+        <label class="text" id="text6">题</label>
+
+        <label class="text" id="text7">击败</label>
+        <label class="text" id="text8">90%</label>
+        <label class="text" id="text9">用户！</label>
+
+        <button id="textColorPicker"></button>
+
+        <div id="buttonContainer">
+            <textarea id="buttonRT" maxlength="6">分享</textarea>
+        </div>
+
+        <button id="bgColorPicker"></button>
+
+        <div id="colorWrapper">
+            <div>
+                <button id="color"></button>
+                <input id="colorLabel" type="text"></input>
+            </div>
+
+            <div id="table">
+                <div class="row">
+                    <div class="cell" style="background:#330000" onMouseOver="SetColor('#330000')" ></div>
+                    <div class="cell" style="background:#331900" onMouseOver="SetColor('#331900')" ></div>
+                    <div class="cell" style="background:#333300" onMouseOver="SetColor('#333300')" ></div>
+                    <div class="cell" style="background:#193300" onMouseOver="SetColor('#193300')" ></div>
+                    <div class="cell" style="background:#003300" onMouseOver="SetColor('#003300')" ></div>
+                    <div class="cell" style="background:#003319" onMouseOver="SetColor('#003319')" ></div>
+                    <div class="cell" style="background:#003333" onMouseOver="SetColor('#003333')" ></div>
+                    <div class="cell" style="background:#001933" onMouseOver="SetColor('#001933')" ></div>
+                    <div class="cell" style="background:#000033" onMouseOver="SetColor('#000033')" ></div>
+                    <div class="cell" style="background:#190033" onMouseOver="SetColor('#190033')" ></div>
+                    <div class="cell" style="background:#330033" onMouseOver="SetColor('#330033')" ></div>
+                    <div class="cell" style="background:#330019" onMouseOver="SetColor('#330019')" ></div>
+                    <div class="cell" style="background:#000000" onMouseOver="SetColor('#000000')" ></div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell" style="background:#660000" onMouseOver="SetColor('#660000')" ></div>
+                    <div class="cell" style="background:#663300" onMouseOver="SetColor('#663300')" ></div>
+                    <div class="cell" style="background:#666600" onMouseOver="SetColor('#666600')" ></div>
+                    <div class="cell" style="background:#336600" onMouseOver="SetColor('#336600')" ></div>
+                    <div class="cell" style="background:#006600" onMouseOver="SetColor('#006600')" ></div>
+                    <div class="cell" style="background:#006633" onMouseOver="SetColor('#006633')" ></div>
+                    <div class="cell" style="background:#006666" onMouseOver="SetColor('#006666')" ></div>
+                    <div class="cell" style="background:#003366" onMouseOver="SetColor('#003366')" ></div>
+                    <div class="cell" style="background:#000066" onMouseOver="SetColor('#000066')" ></div>
+                    <div class="cell" style="background:#330066" onMouseOver="SetColor('#330066')" ></div>
+                    <div class="cell" style="background:#660066" onMouseOver="SetColor('#660066')" ></div>
+                    <div class="cell" style="background:#660033" onMouseOver="SetColor('#660033')" ></div>
+                    <div class="cell" style="background:#202020" onMouseOver="SetColor('#202020')" ></div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell" style="background:#990000" onMouseOver="SetColor('#990000')" ></div>
+                    <div class="cell" style="background:#994C00" onMouseOver="SetColor('#994C00')" ></div>
+                    <div class="cell" style="background:#999900" onMouseOver="SetColor('#999900')" ></div>
+                    <div class="cell" style="background:#4C9900" onMouseOver="SetColor('#4C9900')" ></div>
+                    <div class="cell" style="background:#009900" onMouseOver="SetColor('#009900')" ></div>
+                    <div class="cell" style="background:#00994C" onMouseOver="SetColor('#00994C')" ></div>
+                    <div class="cell" style="background:#009999" onMouseOver="SetColor('#009999')" ></div>
+                    <div class="cell" style="background:#004C99" onMouseOver="SetColor('#004C99')" ></div>
+                    <div class="cell" style="background:#000099" onMouseOver="SetColor('#000099')" ></div>
+                    <div class="cell" style="background:#4C0099" onMouseOver="SetColor('#4C0099')" ></div>
+                    <div class="cell" style="background:#990099" onMouseOver="SetColor('#990099')" ></div>
+                    <div class="cell" style="background:#99004C" onMouseOver="SetColor('#99004C')" ></div>
+                    <div class="cell" style="background:#404040" onMouseOver="SetColor('#404040')" ></div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell" style="background:#CC0000" onMouseOver="SetColor('#CC0000')" ></div>
+                    <div class="cell" style="background:#CC6600" onMouseOver="SetColor('#CC6600')" ></div>
+                    <div class="cell" style="background:#CCCC00" onMouseOver="SetColor('#CCCC00')" ></div>
+                    <div class="cell" style="background:#66CC00" onMouseOver="SetColor('#66CC00')" ></div>
+                    <div class="cell" style="background:#00CC00" onMouseOver="SetColor('#00CC00')" ></div>
+                    <div class="cell" style="background:#00CC66" onMouseOver="SetColor('#00CC66')" ></div>
+                    <div class="cell" style="background:#00CCCC" onMouseOver="SetColor('#00CCCC')" ></div>
+                    <div class="cell" style="background:#0066CC" onMouseOver="SetColor('#0066CC')" ></div>
+                    <div class="cell" style="background:#0000CC" onMouseOver="SetColor('#0000CC')" ></div>
+                    <div class="cell" style="background:#6600CC" onMouseOver="SetColor('#6600CC')" ></div>
+                    <div class="cell" style="background:#CC00CC" onMouseOver="SetColor('#CC00CC')" ></div>
+                    <div class="cell" style="background:#CC0066" onMouseOver="SetColor('#CC0066')" ></div>
+                    <div class="cell" style="background:#606060" onMouseOver="SetColor('#606060')" ></div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell" style="background:#FF0000" onMouseOver="SetColor('#FF0000')" ></div>
+                    <div class="cell" style="background:#FF8000" onMouseOver="SetColor('#FF8000')" ></div>
+                    <div class="cell" style="background:#FFFF00" onMouseOver="SetColor('#FFFF00')" ></div>
+                    <div class="cell" style="background:#80FF00" onMouseOver="SetColor('#80FF00')" ></div>
+                    <div class="cell" style="background:#00FF00" onMouseOver="SetColor('#00FF00')" ></div>
+                    <div class="cell" style="background:#00FF80" onMouseOver="SetColor('#00FF80')" ></div>
+                    <div class="cell" style="background:#00FFFF" onMouseOver="SetColor('#00FFFF')" ></div>
+                    <div class="cell" style="background:#0080FF" onMouseOver="SetColor('#0080FF')" ></div>
+                    <div class="cell" style="background:#0000FF" onMouseOver="SetColor('#0000FF')" ></div>
+                    <div class="cell" style="background:#7F00FF" onMouseOver="SetColor('#7F00FF')" ></div>
+                    <div class="cell" style="background:#FF00FF" onMouseOver="SetColor('#FF00FF')" ></div>
+                    <div class="cell" style="background:#FF007F" onMouseOver="SetColor('#FF007F')" ></div>
+                    <div class="cell" style="background:#808080" onMouseOver="SetColor('#808080')" ></div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell" style="background:#FF3333" onMouseOver="SetColor('#FF3333')" ></div>
+                    <div class="cell" style="background:#FF9933" onMouseOver="SetColor('#FF9933')" ></div>
+                    <div class="cell" style="background:#FFFF33" onMouseOver="SetColor('#FFFF33')" ></div>
+                    <div class="cell" style="background:#99FF33" onMouseOver="SetColor('#99FF33')" ></div>
+                    <div class="cell" style="background:#33FF33" onMouseOver="SetColor('#33FF33')" ></div>
+                    <div class="cell" style="background:#33FF99" onMouseOver="SetColor('#33FF99')" ></div>
+                    <div class="cell" style="background:#33FFFF" onMouseOver="SetColor('#33FFFF')" ></div>
+                    <div class="cell" style="background:#3399FF" onMouseOver="SetColor('#3399FF')" ></div>
+                    <div class="cell" style="background:#3333FF" onMouseOver="SetColor('#3333FF')" ></div>
+                    <div class="cell" style="background:#9933FF" onMouseOver="SetColor('#9933FF')" ></div>
+                    <div class="cell" style="background:#FF33FF" onMouseOver="SetColor('#FF33FF')" ></div>
+                    <div class="cell" style="background:#FF3399" onMouseOver="SetColor('#FF3399')" ></div>
+                    <div class="cell" style="background:#A0A0A0" onMouseOver="SetColor('#A0A0A0')" ></div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell" style="background:#FF6666" onMouseOver="SetColor('#FF6666')" ></div>
+                    <div class="cell" style="background:#FFB266" onMouseOver="SetColor('#FFB266')" ></div>
+                    <div class="cell" style="background:#FFFF66" onMouseOver="SetColor('#FFFF66')" ></div>
+                    <div class="cell" style="background:#B2FF66" onMouseOver="SetColor('#B2FF66')" ></div>
+                    <div class="cell" style="background:#66FF66" onMouseOver="SetColor('#66FF66')" ></div>
+                    <div class="cell" style="background:#66FFB2" onMouseOver="SetColor('#66FFB2')" ></div>
+                    <div class="cell" style="background:#66FFFF" onMouseOver="SetColor('#66FFFF')" ></div>
+                    <div class="cell" style="background:#66B2FF" onMouseOver="SetColor('#66B2FF')" ></div>
+                    <div class="cell" style="background:#6666FF" onMouseOver="SetColor('#6666FF')" ></div>
+                    <div class="cell" style="background:#B266FF" onMouseOver="SetColor('#B266FF')" ></div>
+                    <div class="cell" style="background:#FF66FF" onMouseOver="SetColor('#FF66FF')" ></div>
+                    <div class="cell" style="background:#FF66B2" onMouseOver="SetColor('#FF66B2')" ></div>
+                    <div class="cell" style="background:#C0C0C0" onMouseOver="SetColor('#C0C0C0')" ></div>
+                </div>
+                
+                <div class="row">
+                    <div class="cell" style="background:#FF9999" onMouseOver="SetColor('#FF9999')" ></div>
+                    <div class="cell" style="background:#FFCC99" onMouseOver="SetColor('#FFCC99')" ></div>
+                    <div class="cell" style="background:#FFFF99" onMouseOver="SetColor('#FFFF99')" ></div>
+                    <div class="cell" style="background:#CCFF99" onMouseOver="SetColor('#CCFF99')" ></div>
+                    <div class="cell" style="background:#99FF99" onMouseOver="SetColor('#99FF99')" ></div>
+                    <div class="cell" style="background:#99FFCC" onMouseOver="SetColor('#99FFCC')" ></div>
+                    <div class="cell" style="background:#99FFFF" onMouseOver="SetColor('#99FFFF')" ></div>
+                    <div class="cell" style="background:#99CCFF" onMouseOver="SetColor('#99CCFF')" ></div>
+                    <div class="cell" style="background:#9999FF" onMouseOver="SetColor('#9999FF')" ></div>
+                    <div class="cell" style="background:#CC99FF" onMouseOver="SetColor('#CC99FF')" ></div>
+                    <div class="cell" style="background:#FF99FF" onMouseOver="SetColor('#FF99FF')" ></div>
+                    <div class="cell" style="background:#FF99CC" onMouseOver="SetColor('#FF99CC')" ></div>
+                    <div class="cell" style="background:#E0E0E0" onMouseOver="SetColor('#E0E0E0')" ></div>
+                </div>
+
+                <div class="row">
+                    <div class="cell" style="background:#FFCCCC" onMouseOver="SetColor('#FFCCCC')" ></div>
+                    <div class="cell" style="background:#FFE5CC" onMouseOver="SetColor('#FFE5CC')" ></div>
+                    <div class="cell" style="background:#FFFFCC" onMouseOver="SetColor('#FFFFCC')" ></div>
+                    <div class="cell" style="background:#E5FFCC" onMouseOver="SetColor('#E5FFCC')" ></div>
+                    <div class="cell" style="background:#CCFFCC" onMouseOver="SetColor('#CCFFCC')" ></div>
+                    <div class="cell" style="background:#CCFFE5" onMouseOver="SetColor('#CCFFE5')" ></div>
+                    <div class="cell" style="background:#CCFFFF" onMouseOver="SetColor('#CCFFFF')" ></div>
+                    <div class="cell" style="background:#CCE5FF" onMouseOver="SetColor('#CCE5FF')" ></div>
+                    <div class="cell" style="background:#CCCCFF" onMouseOver="SetColor('#CCCCFF')" ></div>
+                    <div class="cell" style="background:#E5CCFF" onMouseOver="SetColor('#E5CCFF')" ></div>
+                    <div class="cell" style="background:#FFCCFF" onMouseOver="SetColor('#FFCCFF')" ></div>
+                    <div class="cell" style="background:#FFCCE5" onMouseOver="SetColor('#FFCCE5')" ></div>
+                    <div class="cell" style="background:#FFFFFF" onMouseOver="SetColor('#FFFFFF')" ></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<link rel="stylesheet" type="text/css" href="css/EndCard.css">

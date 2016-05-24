@@ -1,0 +1,11 @@
+﻿<div id="videowrapper">
+	<div id="videoContainer">
+		<video id="videoPlayer" src="" autoplay="false" controls="controls"></video>
+		<label id="tipLabel">将视频拖动到这里</label>
+	</div>
+
+	<div style="position: absolute; top: 730px; left: 0px; right: 0px; bottom: 0px;">
+		<textarea id="titleRT">视频描述</textarea>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/VideoCard.css">

@@ -1,0 +1,6 @@
+<div class="lineItem">
+	<input class="leftInput" type="text"></input>
+	<input class="rightInput" type="text"></input>
+	<div></div>
+	<button >X</button>
+</div>

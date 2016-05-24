@@ -1,0 +1,4 @@
+<div class="video">
+	<img/> 
+	<label draggable="true"></label>
+</div>

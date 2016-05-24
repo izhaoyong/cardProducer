@@ -1,0 +1,548 @@
+#bqWrapper{
+	width: 700px;
+	height: 636px;
+	background-color: transparent;
+}
+
+#workImageContainer{
+	position: absolute;
+	left: 70px;
+	width: 488px;
+	height: 636px;
+	background-color: #fff;
+	border-radius: 40px;
+	overflow: hidden;
+}
+
+#return{
+	position: absolute;
+	right: 88px;
+	top: 14px;
+	width: 70px;
+	height: 35px;
+	padding: 0px;
+	font-size: 18px;
+	background-color: #909090;
+	color: #fff;
+	border: 1px solid black;
+	/*visibility: hidden;*/
+	display: none;
+}
+
+#return:hover{
+	background-color: #606060;
+}
+
+#toolbar{
+	position: absolute;
+	top: 0px;
+	right: 35px;
+	width: 91px;
+	height: 636px;
+	border-radius: 8px;
+	background: white;
+	border-color: #fff;
+	box-shadow: 0px 3px 5px #888;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	font-size: 12px;
+}
+
+.toolbarTransform90{
+	transform-origin: 0px center;
+	transform: perspective(1000px) rotateY(90deg);
+	transition-duration: 1s;
+}
+
+.toolbarTransform0{
+	transform-origin: 0px center;
+	transform: perspective(1000px) rotateY(0deg);
+	transition-duration: 1s;
+}
+
+.space20{
+	height: 20px;
+	width: 130px;
+}
+
+.space{
+	height: 10px;
+	width: 130px;
+}
+
+.space5{
+	height: 5px;
+	width: 130px;
+}
+
+.line{
+	width: 130px;
+	height: 1px;
+	background-color: #ccc;
+}
+
+#preview{
+	width: 77px;
+	height: 35px;
+	background-color: #0a78c8;
+	color: white;
+	padding: 0px;
+	border: 1px solid black;
+	margin: auto; 
+}
+
+#markToggleButton{
+	width: 77px;
+	height: 35px;
+	border:1px solid black;
+	color: black;
+}
+
+#comment{
+	display: block;
+	margin: auto;
+	width: 36px;
+	height: 36px;
+}
+
+#link{
+	display: block;
+	margin: auto;
+	height: 48px;
+	width: 48px;
+}
+
+#fontDDL{
+	width: 70px;
+	height: 21px;
+}
+
+#fontSizeSetter>label{
+	font-size: 12px !important;
+}
+
+#fontSizeDDL{
+	width: 70px;
+	height: 21px;
+	overflow-y: scroll;
+}
+
+#bgColor>button{
+	width: 50px;
+	height: 21px;
+	background-color: white;
+	border:1px solid black;
+	padding: 1px;
+}
+
+#cnColorSetter>label{
+	font-size: 12px !important;
+}
+
+#cnColorPicker{
+	width: 50px;
+	height: 21px;
+	border: 1px solid black;
+	background-color: #0a78c8;
+}
+
+#pyColorSetter>label{
+	font-size: 12px !important;
+}
+
+#pyColorPicker{
+	width: 50px;
+	height: 21px;
+	border: 1px solid black;
+	background-color: #8e8e93;
+}
+
+#enColorSetter>label{
+	font-size: 12px !important;
+}
+
+#transColorPicker{
+	width: 50px;
+	height: 21px;
+	border: 1px solid black;
+	background-color: #ff9500;
+}
+
+#markWrapper{
+	position: absolute;
+	background-color: #eee;
+	width: 380px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 10px;
+	padding-left: 10px;
+	top: 400px;
+	left: 180px;
+	visibility: hidden;
+}
+
+#markWrapper>input{
+	font-size: 16px;
+	width: 260px;
+	height: 30px;
+}
+
+#markWrapper>button{
+	height: 35px;
+}
+
+#markWrapper>button:nth-child(2){
+	margin-left: 10px;
+}
+
+#markWrapper>button:nth-child(3){
+	margin-left: 5px;
+}
+
+#sentenceSetPanel{
+    width: 260px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #eee;
+    border: none;
+    position: absolute;
+    box-shadow: 2px 2px 2px gray;
+    display: none;
+}
+
+#sentenceSetPanel>div:nth-child(1){
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #0A78C8;
+    font-size: 20px;
+}
+
+#sentenceSetPanel>div:nth-child(2){
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #0A78C8;
+    font-size: 20px;
+}
+
+#sentenceSetPanel>div:nth-child(3){
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: #8E8E93;
+    font-size: 20px;
+}
+
+#sentenceSetPanel>div:nth-child(4){
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #FF9500;
+    font-size: 20px;
+}
+
+#webLink{
+	position: absolute;
+	width: 420px;
+	height: 147px;
+	background-color: #d4ccc2;
+	border-color: #d4ccc2;
+	border-width: 3px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px gray;
+	display: none;
+}
+
+#webLink>div:nth-child(1){
+	position: absolute;
+	left: 14px;
+	right: 14px;
+	top: 7px;
+	height: 40px;
+}
+
+#webLink>div:nth-child(1)>label{
+	color: #0A78C8;
+	font-size: 21px;
+	vertical-align: middle;
+}
+
+#webLink>div:nth-child(1)>input{
+	height: 35px;
+	width: 335px;
+	font-size: 21px;
+	padding-left: 7px;
+	vertical-align: middle;
+}
+
+#webLink>div:nth-child(2){
+	position: absolute;
+	left: 14px;
+	right: 14px;
+	top: 50px;
+	height: 40px;
+}
+
+#webLink>div:nth-child(2)>label{
+	color: #0A78C8;
+	font-size: 21px;
+	vertical-align: middle;
+}
+
+#webLink>div:nth-child(2)>input{
+	height: 35px;
+	width: 335px;
+	font-size: 21px;
+	padding-left: 7px;
+	vertical-align: middle;
+}
+
+#webLink>button:nth-child(3){
+	position: absolute;
+	left: 14px;
+	width: 190px;
+	height: 40px;
+	bottom: 9px;
+	background-color: #0866c8;
+	color: #fff;
+	font-size: 14px;
+	border-color: black;
+	border-width: 1px;
+}
+
+#webLink>button:nth-child(3):hover{
+	background-color: #0A78C8;
+}
+
+#webLink>button:nth-child(4){
+	position: absolute;
+	right: 14px;
+	width: 190px;
+	bottom: 9px;
+	height: 40px;
+	background-color: #444458;
+	color: #fff;
+	font-size: 14px;
+	border-color: black;
+	border-width: 1px;
+}
+
+#webLink>button:nth-child(4):hover{
+	background-color: #585858;
+}
+
+#colorWrapper{
+	position: absolute;
+	padding: 3px;
+	width: 144px;
+	height: 122px;
+	border: 1px solid gray;
+	background-color: white;
+	display: none;
+}
+
+#colorWrapper>div:nth-child(1){
+	font-size: 0px;
+	height: 23px;
+	line-height: 23px;
+}
+
+#table{
+    display: table;
+}
+
+.row{
+    display: table-row;
+}
+
+#table>div:nth-child(1)>div{
+    border-top: 1px solid black;
+}
+
+#table>div>div:nth-child(1){
+    border-left: 1px solid black;
+}
+
+.cell{
+    display: table-cell;
+    height: 10px;
+    width: 10px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+#color{
+	position: absolute;
+	left: 3px;
+    height: 20px;
+    width: 20px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: black;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#colorLabel{
+	position: absolute;
+	left: 30px;
+    border-width: 2px;
+    padding: 0px;
+    height: 16px;
+    width: 50px;
+    vertical-align: middle;
+}
+
+/*cornerWrapper*/
+.cornerWrapper{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 20px;
+	left: 30px;
+}
+
+.cornerWrapper>img{
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+}
+
+.cornerWrapper>div{
+	position: absolute;
+	top: 22px;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	background-color: red;
+}
+
+.cornerWrapper>a{
+	visibility: hidden;
+	background-color: black;
+	position: absolute;
+	margin: 0px;
+	top: 22px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+}
+
+div.cornerWrapper>button{
+	position: absolute;	
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	padding: 0px;
+	border-radius: 10px;
+	border: 1px solid black;
+	font-size: 10px;
+	font-family: "Microsoft Yahei";
+	background-color: white;
+	outline: none;
+}
+
+div.cornerWrapper>button:hover{
+	background-color: #eee;
+}
+
+button.right{
+	left: 60px;
+}
+
+button.wrong{
+	left: 80px;
+}
+
+div.cornerWrapper>label{
+	position: absolute;
+	background-color: white;
+	left: 0px;
+	top: 22px;
+}
+
+button[class*='corner']{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    border:1px solid black;
+    padding: 0px;
+    background: white;
+}
+
+/*The follow is about the audio drag*/
+.deleteImg{
+	width: 20px;
+	height: 20px;
+}
+
+.audioImg{
+	width: 33px;
+	height: 33px;
+}
+
+.no_select{
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*The follow is about the comment*/
+.commentWrapper{
+    display: inline-block;
+    position: absolute;
+}
+
+.commentWrapper>img{
+	position: absolute;
+	top: 0px;
+    width: 20px;
+    height: 20px;
+}
+
+.commentWrapper>div:nth-child(5){
+    position: relative; 
+    top: 3px;
+    min-height: 30px;
+    background-color: yellow;
+    display: flex;
+    flex-flow: column;
+    float: left;
+    border-radius: 6px;
+    overflow: hidden;
+    outline: none;
+}
+
+.commentWrapper>div>div{
+    min-height: 30px;
+    min-width: 12px;
+    max-width: 300px;
+    font-size: 30px;
+    line-height: 32px;
+    padding: 5px;
+    outline: none;
+    border: none;
+}
+
+.cnWrapper{
+    background-color: white;
+    /*border: 1px solid black;*/
+}
+
+.pyWrapper{
+    background-color: white;
+    display: none;
+}
+
+.transWrapper{
+    background-color: white;
+    display: none;
+}

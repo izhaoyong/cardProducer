@@ -1,0 +1,17 @@
+﻿<div id="Ex3wrapper">
+	<div>
+		<label style="left: 0px; position: absolute; font-family: Arial; font-size: 80px;">“</label>
+		<label style="right: 0px; position: absolute; font-family: Arial; font-size: 80px;">”</label>
+
+		<textarea id="questionInput">?</textarea>
+		<div id="line"></div>			
+	</div>
+
+	<button id="playButton"><audio src="assets/audio/default_audio.mp3"></audio></button>
+
+	<img id="aImage" src="default_picture.jpg" draggable="false"/>
+	<img id="bImage" src="default_picture.jpg" draggable="false"/>
+
+	<label id="rightLabel">正确答案</label>
+</div>
+<link rel="stylesheet" type="text/css" href="css/Exercise3Card.css">

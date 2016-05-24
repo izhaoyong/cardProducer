@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sources>
+	<source location="content/system/res/wav/100096.wav" id="1" ResourceName="航运" ResourceID="100096"/>
+	<source location="content/system/res/wav/100352.wav" id="2" ResourceName="简易" ResourceID="100352"/>
+	<source location="content/system/res/wav/100608.wav" id="3" ResourceName="啃" ResourceID="100608"/>
+	<source location="content/system/res/wav/100864.wav" id="4" ResourceName="脉" ResourceID="100864"/>
+</sources>

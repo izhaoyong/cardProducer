@@ -1,0 +1,75 @@
+#picwrapper{
+	position: relative;
+	border-radius:40px;
+	width: 1000px;
+	height: 908px;
+	background: #fff;
+	transform: scale(0.7) translate(-214px,-194px);
+}
+
+#picWrapper{
+	position: absolute;
+	top: 0px;
+	height: 730px;
+	width: 1000px;
+}
+
+#backgroundImage{
+	width: 100%;
+	height: 100%;
+	border-top-left-radius:40px;
+	border-top-right-radius:40px;
+}
+
+.explainRT{
+	position: absolute;
+	top: 25px;
+	bottom: 25px;
+	left: 30px;
+	right: 200px;
+
+	border: none;
+	overflow: hidden;
+	outline:0;
+}
+
+#explainRT{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 36px;
+	padding-top: 46px;
+	padding-bottom: 46px; 
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 36px;
+	color : #233C46;
+	text-align: center;
+	border: none;
+	overflow: hidden;
+	outline:0;
+	resize: none;
+}
+
+#playButton{
+	position: absolute;
+	right: 30px;
+	top: 25px;
+	width: 128px;
+	height: 128px;
+	border-radius: 64px;
+	border-style:solid;
+	border-width:1px;
+	border-color:black;
+
+	background-image: url('../assets/icon/play.png');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	outline: none;
+}
+
+#playButton:hover{
+	background-color: gray;
+}

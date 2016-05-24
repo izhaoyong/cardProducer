@@ -1,0 +1,25 @@
+﻿<div id="picwrapper">
+	<div id="picWrapper">
+		<img id="backgroundImage" src="default_picture.jpg" draggable="false" />
+	</div>
+
+	<div style="position: absolute; top: 730px; width: 100%; bottom: 0px;">
+		<div id="ciArea">
+			<ruby>
+				<rb>拥</rb><rt contenteditable="true">si</rt>
+				<rb>有</rb><rt contenteditable="true">qu</rt>
+				<rb>你</rb><rt contenteditable="true">ni</rt>
+			</ruby>
+			<input id="ciRT" maxlength="4"></input>
+		</div>
+
+		<div class="explainRT">
+			<textarea id="explainRT">to send package</textarea>
+		</div>
+
+		<button id="playButton">
+			<audio src="assets/audio/default_audio.mp3"></audio>
+		</button>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/CiCard.css">

@@ -1,0 +1,268 @@
+#paixuWrapper{
+	width: 700px;
+	height: 636px;
+	position: relative;
+	background-color: white;
+	overflow-y: scroll;
+}
+
+.input{
+	vertical-align: middle;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    resize: none;
+    display: inline-block;
+    width: 80%;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.sequence{
+	margin: 10px;
+	border: 1px solid black;
+	height: 88%;
+	border-radius: 10px;
+}
+
+.button{
+	padding: 3px;
+	border-radius: 10px;
+	margin: 10px;
+	border: 1px solid black;
+	outline: none;
+	font-size: 20px;
+}
+
+#namecheck{
+	position: absolute;
+	width: 430px;
+	height: 520px;
+	background: #efeae4;
+	border: 1px solid #696969;
+	overflow: hidden;
+	display: none;
+}
+
+#namecheck>form{
+	position: absolute;
+	height: 520px;
+	width: 430px;
+}
+
+#infoLabel{
+	position: absolute;
+	top: 0px;
+	width: 428px;
+	height: 50px;
+	line-height: 50px;
+	background-color: #D4CCC2;
+	color: #000;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left:  15px;
+	vertical-align: middle;
+}
+
+#unsaveTipLabel{
+	visibility: hidden;
+	left: 160px;
+	top: 14px;
+	color: #d95f5f;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#namecheck>form>div:nth-child(3){
+	position: absolute;
+	top: 50px;
+	width: 430px;
+	height: 150px;
+	text-align: center;
+}
+
+#namecheck>form>div:nth-child(3)>label:nth-child(1){
+	position: absolute;
+	right: 330px;
+	top: 30px;
+	font-size: 20px;
+}
+
+#cardsnametext{
+	position: absolute;
+	left: 120px;
+	top: 20px;
+	width: 260px;
+	height: 40px;
+	font-size: 18px;
+}
+
+#namecheck>form>div:nth-child(3)>label:nth-child(3){
+	position: absolute;
+	right: 20px;
+	top: 30px;
+	color: #c03535;
+	font-size: 36px;
+}
+
+#namecheck>form>div:nth-child(3)>label:nth-child(4){
+	position: absolute;
+	right: 330px;
+	top: 90px;
+	font-size: 20px;
+}
+
+#tagstext{
+	position: absolute;
+	left: 120px;
+	top: 80px;
+	width: 260px;
+	height: 40px;
+	font-size: 18px;
+}
+
+#namecheck>form>div:nth-child(4){
+	position: absolute;
+	top: 200px;
+	bottom: 80px;
+	width: 430px;
+}
+
+#namecheck>form>div:nth-child(4)>label:nth-child(1){
+	position: absolute;
+	right: 330px;
+	top: 0px;
+	color: #0a78c8;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#namecheck>form>div:nth-child(4)>hr:nth-child(2){
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 30px;
+	background-color: #ccc4ba;
+	height: 1px;
+	border: none;
+}
+
+#namecheck>form>div:nth-child(4)>hr:nth-child(3){
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 31px;
+	background-color: #eee;
+	height: 1px;
+	border: none;
+}
+
+.tileGroup{
+	position: absolute;
+	left: 50%;
+	margin-left: -180px;
+	top: 40px;
+	width: 360px;
+	height: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.tileGroup>div{
+	color: #0a78c8;
+	font-size: 16px;
+	flex-grow: 1;
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+}
+
+#namecheck>form>div:nth-child(4)>label:nth-child(5){
+	position: absolute;
+	right: 20px;
+	top: 60px;
+	color: #c03535;
+	font-size: 36px;
+}
+
+#namecheck>form>div:nth-child(4)>label:nth-child(6){
+	position: absolute;
+	right: 330px;
+	top: 130px;
+	color: #0a78c8;
+	font-size: 20px;
+}
+
+#namecheck>form>div:nth-child(4)>label:nth-child(8){
+	position: absolute;
+	right: 330px;
+	top: 185px;
+	color: #0a78c8;
+	font-size: 20px;
+}
+
+#Category1{
+	position: absolute;
+	left: 120px;
+	top: 120px;
+	width: 260px;
+	height: 40px;
+	font-size: 18px;
+	color: #0a78c8;
+}
+
+#EX{
+	position: absolute;
+	left: 120px;
+	top: 175px;
+	width: 260px;
+	height: 40px;
+	font-size: 18px;
+	color: #0a78c8;
+}
+
+#namecheck>form>div:nth-child(5){
+	position: absolute;
+	bottom: 0px;
+	width: 430px;
+	height: 80px;
+	background-color: #D4CCC2;
+	border: none;
+}
+
+#namecheck>form>div:nth-child(5)>button:nth-child(1){
+	position: absolute;
+	left: 60px;
+	bottom: 20px;
+	width: 150px;
+	height: 40px;
+	background-color: #0866c8;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+#namecheck>form>div:nth-child(5)>button:nth-child(1):hover{
+	background-color: #0a78c8;
+}
+
+#namecheck>form>div:nth-child(5)>button:nth-child(2){
+	position: absolute;
+	right: 60px;
+	bottom: 20px;
+	width: 150px;
+	height: 40px;
+	background-color: #636363;
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0px;
+	border: 1px solid black;
+}
+
+#namecheck>form>div:nth-child(5)>button:nth-child(2):hover{
+	background-color: #585858;
+}

@@ -1,0 +1,25 @@
+#pictureContent{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+#pictureOriginalContent{
+	display: flex;
+}
+
+#pictureSearchContent{
+	display: none;
+}
+
+.TileGroup > img{
+	margin-bottom: 10px;
+}
+
+.TileGroup > img:nth-child(1){
+	margin-top: 10px;
+}
+
+.TileGroup > img:nth-child(2){
+	margin-top: 10px;
+}

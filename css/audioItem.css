@@ -1,0 +1,101 @@
+progress::-webkit-progress-bar {
+  background-color: transparent;
+  border-radius: 2px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress::-webkit-progress-value {
+  background-color: blue;
+}
+
+.blur{
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+}
+
+/*.TileGroup{
+	width: 220px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: red;
+}*/
+
+.audio{
+	position: relative;
+	width: 100px;
+	height: 75px;
+	background-color: transparent;
+}
+
+.audio>label{
+	display: block;
+	width: 88px;
+	height: 63px;
+	padding: 0px;
+	text-align: center;
+	line-height: 63px;
+	margin: 6px;
+
+	font-size: 16px;
+	background-color: white;
+}
+
+.audio>button{
+	position: absolute;
+	margin: auto;
+	padding: 0px;
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	border: 1px solid black;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	outline: none;
+	background-image: url('../assets/mainIcon/play32.png');
+	background-size: 70% 70%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	visibility: hidden;
+}
+
+.audio>progress{
+	position: absolute;
+	padding: 0px;
+	margin: 0px;
+	left: 6px;
+	bottom: 6px;
+	height: 6px;
+	width: 88px;
+	visibility: hidden;
+}
+
+.audio>button[class*='show']{
+	visibility: visible;
+}
+
+.audio>progress[class*='show']{
+	visibility: visible;
+}
+
+/*#playButton{
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid black;
+	width: 128px;
+	height: 128px;
+	border-radius: 64px;
+	background-image: url('assets/icon/play.png');
+	background-position: 50% 50%;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	outline: none;
+	background-color: white;
+}
+
+#playButton:hover{
+	background-color: silver;
+}*/

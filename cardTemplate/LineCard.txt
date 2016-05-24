@@ -1,0 +1,16 @@
+﻿<div id="Linewrapper">
+	<label>连线卡</label>
+	<button id="add">添加</button>
+	<div id="lineGroupContainer">
+		<div id="lineWrapper">
+			<div class="lineItem">
+				<input class="leftInput" type="text" ></input>
+				<input class="rightInput" type="text"></input>
+				<div></div>
+				<button>X</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+<link rel="stylesheet" type="text/css" href="css/LineCard.css">

@@ -1,0 +1,4 @@
+<div class="wordGroup">
+	<input type="text" class="textInput"/>
+	<button >x</button>
+</div>
